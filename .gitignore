@@ -1,4 +1,4 @@
 *.pyc
 __pycache__/*
-/sample_venv
-/backup
+sample_venv/*
+backup/*
