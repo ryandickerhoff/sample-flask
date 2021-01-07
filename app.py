@@ -7,6 +7,8 @@ import os
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+
+from server import server, app
 #-
 
 #-
@@ -33,9 +35,9 @@ def display_value(value):
 #-
 
 
-# @app.route("/")
-# def hello_world():
-#     return "Hello"#render_template("index.html")
+@server.route("/")
+def hello_world():
+    return "Hello"#render_template("index.html")
 
 #-
 if __name__ == '__main__':
